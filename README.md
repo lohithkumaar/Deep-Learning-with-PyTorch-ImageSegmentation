@@ -25,3 +25,29 @@ To run this project in Google Colab, follow these steps:
    !pip install segmentation-models-pytorch
    !pip install -U git+https://github.com/albumentations-team/albumentations
    !pip install --upgrade opencv-contrib-python
+
+## Usage
+   **Data Preparation**
+   Prepare your dataset with images and corresponding masks. Ensure the dataset structure is as follows:
+   ```
+   dataset/
+   │
+   ├── images/
+   │   ├── image1.jpg
+   │   ├── image2.jpg
+   │   └── ...
+   └── masks/
+       ├── mask1.png
+       ├── mask2.png
+       └── ...
+   ```
+## Training the Model
+ **1. Import necessary libraries and modules:**
+ ```
+  import segmentation_models_pytorch as smp
+  from albumentations import Compose, RandomCrop, HorizontalFlip, Normalize
+  from albumentations.pytorch import ToTensorV2
+```
+## Results
+ Include some example images and their segmented outputs to showcase the model performance.
+
